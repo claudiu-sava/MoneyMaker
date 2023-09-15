@@ -8,11 +8,16 @@ class Program
         Console.WriteLine("How many points do you have?");
         Console.Write(">>> ");
 
+
+        double points = Convert.ToDouble(Console.ReadLine());
+        points = Math.Floor(points);
+
+
         int goldCoinValue = 10;
         int silverCoinValue = 5;
         int bronzeCoinValue = 1;
 
-        double points = Convert.ToDouble(Console.ReadLine());
+        
         
         Console.WriteLine($"Great! You have {points} points!");
 
